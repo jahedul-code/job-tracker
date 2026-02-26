@@ -62,9 +62,11 @@
 
         </section>
 
-        <section id="job-container" class="allCard space-y-4">
+        <section id="job-container">
             
-                <!-- card 1 -->
+        <div id="all-container" class="allCard space-y-4 hidden">
+
+          <!-- card 1 -->
                  <div class="bg-white p-5 flex justify-between rounded-md">
                     <div class="space-y-3">
                         <h3 class="text-2xl font-semibold text-[#002C5C]">Mobile First Corp</h3>
@@ -258,11 +260,13 @@ Full-time
         </div>
       </div>
 
+        </div>        
+
       
 
       <!-- empty card -->
 
-      <div class="bg-white p-5 rounded-md hidden">
+      <div id="delete-container" class="bg-white p-5 rounded-md hidden">
         
         <div class="p-12 text-center space-y-2">
         <img class="mx-auto" src="asset/assignment_7959593 1.png" alt="">
@@ -272,13 +276,14 @@ Full-time
         </div>
       </div>
 
-
+        <div id="interview-container" class="Inerview hidden">
+          <p>Interview</p></div>
+        <div id="rejected-container" class="rejected hidden"><p>Rejected</p></div>
+    
 
         </section>
 
-        <section id="interview-container" class="Inerview hidden">Interview</section>
-        <section id="job-container" class="rejected hidden">Rejected</section>
-    </main>
+</main>
     
     <script src="./index.js"></script>
 
