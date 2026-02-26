@@ -43,19 +43,26 @@
 
         <section class="space-y-1">
             <div class="flex justify-between py-2">
+              
                 <h2 class="text-2xl font-semibold text-[#002C5C]">Available Jobs</h2>
                 <p class="text-[#64748B]">8 Jobs</p>
             </div>
 
             <div class="flex gap-4">
-                <button class="bg-blue-500 text-white p-2 rounded-md">All</button>
-                <button class="bg-white p-2 rounded-md">Interview</button>
-                <button class="bg-white p-2 rounded-md">Rejected</button>
+                <button id="tab-all"
+                onclick="switchTab('all')"
+                 class="bg-white text-gray-500 font-semibold p-2 rounded-md cursor-pointer active:scale-75 transition duration-150">All</button>
+                <button id="tab-interview"
+                onclick="switchTab('interview')"
+                 class="bg-white text-gray-500 font-semibold p-2 rounded-md cursor-pointer active:scale-75 transition duration-150">Interview</button>
+                <button id="tab-rejected"
+                onclick="switchTab('rejected')"
+                 class="bg-white text-gray-500 font-semibold p-2 rounded-md cursor-pointer active:scale-75 transition duration-150">Rejected</button>
             </div>
 
         </section>
 
-        <section class="allCard space-y-4">
+        <section id="job-container" class="allCard space-y-4">
             
                 <!-- card 1 -->
                  <div class="bg-white p-5 flex justify-between rounded-md">
@@ -71,12 +78,12 @@ Full-time
         <button class="bg-gray-200 p-2 rounded-md">Not Applied</button>
         <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
         <div class="flex gap-5">
-          <button class="text-green-500 font-semibold border-2 rounded-md border-green-500 p-2">INTERVIEW</button>  
-          <button class="text-red-500 font-semibold border-2 rounded-md border-red-500 p-2">REJECTED</button>  
+          <button class="text-green-500 font-semibold border-2 rounded-md border-green-500 p-4">INTERVIEW</button>  
+          <button class="text-red-500 font-semibold border-2 rounded-md border-red-500 p-4">REJECTED</button>  
         </div>
          </div>
          <div class="delete">
-            <button class="p-1 border border-[0.5px] rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
+            <button class="p-1 border rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
         </div>
       </div>
 
@@ -95,12 +102,12 @@ Part-time
         <button class="bg-gray-200 p-2 rounded-md">Not Applied</button>
         <p>Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
         <div class="flex gap-5">
-          <button class="text-green-500 font-semibold border-2 rounded-md border-green-500 p-2">INTERVIEW</button>  
-          <button class="text-red-500 font-semibold border-2 rounded-md border-red-500 p-2">REJECTED</button>  
+          <button class="text-green-500 font-semibold border-2 rounded-md border-green-500 p-4">INTERVIEW</button>  
+          <button class="text-red-500 font-semibold border-2 rounded-md border-red-500 p-4">REJECTED</button>  
         </div>
          </div>
          <div class="delete">
-            <button class="p-1 border border-[0.5px] rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
+            <button class="p-1 border rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
         </div>
       </div>
 
@@ -121,12 +128,12 @@ Part-time
 Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.
 </p>
         <div class="flex gap-5">
-          <button class="text-green-500 font-semibold border-2 rounded-md border-green-500 p-2">INTERVIEW</button>  
-          <button class="text-red-500 font-semibold border-2 rounded-md border-red-500 p-2">REJECTED</button>  
+          <button class="text-green-500 font-semibold border-2 rounded-md border-green-500 p-4">INTERVIEW</button>  
+          <button class="text-red-500 font-semibold border-2 rounded-md border-red-500 p-4">REJECTED</button>  
         </div>
          </div>
          <div class="delete">
-            <button class="p-1 border border-[0.5px] rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
+            <button class="p-1 border rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
         </div>
       </div>
 
@@ -142,15 +149,15 @@ Transform complex data into compelling visualizations. Required skills: D3.js, R
  •
  $140,000 - $190,000</p>
         
-        <button class="bg-gray-200 p-2 rounded-md">Not Applied</button>
+        <button class="bg-gray-200 p-2 rounded-m">Not Applied</button>
         <p>Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</p>
         <div class="flex gap-5">
-          <button class="text-green-500 font-semibold border-2 rounded-md border-green-500 p-2">INTERVIEW</button>  
-          <button class="text-red-500 font-semibold border-2 rounded-md border-red-500 p-2">REJECTED</button>  
+          <button class="text-green-500 font-semibold border-2 rounded-md border-green-500 p-4">INTERVIEW</button>  
+          <button class="text-red-500 font-semibold border-2 rounded-md border-red-500 p-4">REJECTED</button>  
         </div>
          </div>
          <div class="delete">
-            <button class="p-1 border border-[0.5px] rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
+            <button class="p-1 border rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
         </div>
       </div>
 
@@ -174,7 +181,7 @@ Transform complex data into compelling visualizations. Required skills: D3.js, R
         </div>
          </div>
          <div class="delete">
-            <button class="p-1 border border-[0.5px] rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
+            <button class="p-1 border rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
         </div>
       </div>
 
@@ -198,7 +205,7 @@ Full-time
         </div>
          </div>
          <div class="delete">
-            <button class="p-1 border border-[0.5px] rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
+            <button class="p-1 border rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
         </div>
       </div>
 
@@ -223,7 +230,7 @@ Full-time
         </div>
          </div>
          <div class="delete">
-            <button class="p-1 border border-[0.5px] rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
+            <button class="p-1 border rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
         </div>
       </div>
 
@@ -247,12 +254,15 @@ Full-time
         </div>
          </div>
          <div class="delete">
-            <button class="p-1 border border-[0.5px] rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
+            <button class="p-1 border rounded-full"><i class="fa-solid fa-trash-can" style="color: rgb(13, 20, 36);"></i></button>
         </div>
       </div>
 
+      
 
-      <div class="bg-white p-5 rounded-md">
+      <!-- empty card -->
+
+      <div class="bg-white p-5 rounded-md hidden">
         
         <div class="p-12 text-center space-y-2">
         <img class="mx-auto" src="asset/assignment_7959593 1.png" alt="">
@@ -265,8 +275,12 @@ Full-time
 
 
         </section>
+
+        <section id="interview-container" class="Inerview hidden">Interview</section>
+        <section id="job-container" class="rejected hidden">Rejected</section>
     </main>
     
-    
+    <script src="./index.js"></script>
+
 </body>
 </html>
