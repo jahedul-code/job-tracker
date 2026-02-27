@@ -39,4 +39,32 @@ function switchTab(tab) {
     }
    
 }
+
+// stat update
+const totalStat = document.getElementById("stat-total");
+const interviewStat = document.getElementById("stat-interview");
+const rejectedStat = document.getElementById("stat-rejected");
 switchTab(currentTab);
+
+totalStat.innerText = allContainer.children.length;
+
+document.getElementById("job-container").addEventListener("click", function (event) {
+    const clickedElement = event.target;
+    const card = clickedElement.closest(".card");
+    console.log(card);
+    
+    
+    if (clickedElement.classList.contains("interview")){
+        
+        interviewContainer.appendChild(card);
+    }
+    if (clickedElement.classList.contains("rejected")){
+        
+        rejectedContainer.appendChild(card);
+    }
+    if (clickedElement.classList.contains("delete")){
+        
+        
+    }
+})
+
