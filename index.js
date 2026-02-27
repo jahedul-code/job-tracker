@@ -51,15 +51,15 @@ totalStat.innerText = allContainer.children.length;
 document.getElementById("job-container").addEventListener("click", function (event) {
     const clickedElement = event.target;
     const card = clickedElement.closest(".card");
-    console.log(card);
+    const status = card.querySelector(".status");
     
     
     if (clickedElement.classList.contains("interview")){
-        
+        status.innerText = "Interviewed";
         interviewContainer.appendChild(card);
     }
     if (clickedElement.classList.contains("rejected")){
-        
+        status.innerText = "Rejected"
         rejectedContainer.appendChild(card);
     }
     if (clickedElement.classList.contains("delete")){
